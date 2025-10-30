@@ -2,12 +2,6 @@
 --Create Database datawarehouse_2025_G03
 --USE datawarehouse_2025_G03
 
-----Cambios:
--- arreglo tipos de datos en tabla Fact_Ventas 
--- y separo fecha en 2, fecha (date) y hora (time)
-
-
-
 CREATE TABLE [dbo].[Dim_Cliente_G03](
 	[skCliente] [int] IDENTITY(1,1) NOT NULL,
 	[idCliente] [int] NOT NULL,
@@ -122,4 +116,5 @@ CREATE TABLE [dbo].[Fact_Ventas_G03](
 	[edadEmpleado] [int] NULL,
 	[antiguedadEmpleado] [int] NULL
 ) 
+
 
